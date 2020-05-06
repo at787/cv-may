@@ -1,0 +1,411 @@
+
+%________________________________________________________________________________________
+% @brief    LaTeX2e Resume for Piotr Migdał
+% @author   Piotr Migdał
+% @url      http://migdal.wikidot.com/en
+% @date     November 2009
+% @info     Based on Latex Resume Template by Chris Paciorek 
+%           http://www.biostat.harvard.edu/~paciorek/
+
+%________________________________________________________________________________________
+\documentclass[margin,line]{resume}
+\topmargin -5mm
+
+\usepackage[utf8]{inputenc}
+\usepackage[plmath,OT4]{polski}
+
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+%\definecolor{linkcolour}{rgb}{0,0,0}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+%\usepackage{fontspec} 
+%\defaultfontfeatures{Scale=MatchLowercase,Mapping=tex-text} % pozwala na -- i ,,''
+%\setromanfont{Gentium}
+
+\newcommand{\superscript}[1]{\ensuremath{^{\textrm{#1}}}}
+\newcommand{\thh}[0]{\superscript{th}}
+\newcommand{\st}[0]{\superscript{st}}
+\newcommand{\nd}[0]{\superscript{nd}}
+\newcommand{\rd}[0]{\superscript{rd}}
+
+%\sectionwidth{10}
+% resumewidth	
+
+\begin{document}
+%\title{Curriculum Vitae}
+%\name{\Large Curriculum Vitae}
+\name{\Large Curriculum Vitae}
+
+\begin{resume}
+
+    %____________________________________________________________________________________
+    % Personal Information
+    \section{\mysidestyle Personal\\Information}\vspace{2mm}
+
+    \begin{tabular}{@{} l @{\hspace{28mm}} l}
+    First name / Surname:    & Angie Torres-Beltrán     \\
+    Date of birth:           & 1986-03-13               \\
+    Citizenship:             & Polish                   \\
+    E-mail:                  & \href{pmigdal@gmail.com}{\tt pmigdal@gmail.com}        \\
+    Homepage:			& \href{http://migdal.wikidot.com}{\tt http://migdal.wikidot.com} \\
+    Profiles: & \href{https://github.com/stared}{GitHub}, \href{http://stackexchange.com/users/506817/piotr-migdal?tab=accounts}{StackExchange}\\
+    \end{tabular}
+
+%\vspace{3mm}
+
+    %____________________________________________________________________________________
+    % Objective
+%    \section{\mysidestyle Objective}
+%    A competitive Ph.D. programme in theoretical physics (or related discipline), compatible with the research interests.
+    
+\vspace{3mm}
+
+    %____________________________________________________________________________________
+    % Research Interests
+    \section{\mysidestyle Research\\Interests}
+    complex systems, complex networks, data science, mathematical modelling in psychology and sociology,
+    geometry of quantum states, quantum optics, quantum information
+
+\vspace{3mm}
+
+    %____________________________________________________________________________________
+    % Education
+    \section{\mysidestyle Education}
+    
+    {\bf ICFO - The Institute of Photonic Sciences},  Castelldefels (Barcelona), Spain \\%
+    Quantum Optics Theory Group of Maciej Lewenstein \hfill {\bf 2011 -- 2014}\\
+   \begin{list2}
+        \vspace*{-4mm}
+        \item PhD Degree, \emph{cum laude} {\hfill Dec 2014}\\
+        thesis: \href{http://arxiv.org/abs/1412.6796}{Symmetries and self-similarity of many-body wavefunctions}\\
+        advisors: Maciej Lewenstein, Javier Rodríguez-Laguna\\
+        reviewers: Seth Lloyd (MIT), Karol Życzkowski (Jagiellonian University)\\
+        \item Polynomial invariants for permutation-symmetric pure states, application to linear optics.
+        \item Application of sequence-analysis methods for quantum states, data visualization.
+        \item Complex quantum networks: walks, community detection.
+        \item Collaboration: mathematical psychology.
+    \end{list2}
+
+    {\bf University of Warsaw}, Warsaw, Poland \\
+    {\sl Inter-faculty Studies in Mathematics and Natural Sciences} \hfill {\bf 2005 -- 2011}\\
+    \begin{list2}
+      \vspace*{-4mm}
+      \item Master's Degree  (5 year programme) {\hfill Jan 2011}\\
+      Physics (Theoretical Physics --- Quantum Optics and Atomic Physics)\\
+      thesis: \href{http://migdal.wikidot.com/en:collective-decoherence}{Quantum codes immune to collective decoherence and photon loss},\\
+      advisor: Konrad Banaszek, grade: 5/5
+      %(thesis: {\sl A generalized transfer-matrix method in optics and quantum mechanics}) 
+      \item Bachelor's Degree, Mathematics \hfill Sept 2009\\
+      thesis: \href{http://migdal.wikidot.com/en:mafia}{A mathematical model of the mafia game}, advisor: Jacek Miękisz, grade: 5/5
+    \end{list2}
+
+\vspace{3mm}
+
+    \section{\mysidestyle Professional\\Experience}
+
+    {\bf  Freelancing} in data analysis and data visualization \hfill {\bf Jan 2014 --}\\
+    Selected projects:\\
+    \begin{list2}
+        \vspace*{-4mm}
+        \item \href{http://trainings.deepsense.io/}{2-day intensive training in machine learning and big data for DeepSense.io} in San Francisco, New York and London (IPython Notebook, scikit-learn, Spark)
+        \item Processing data of Polish schools for project \href{http://szkolomat.pl/}{Szkolomat} (\href{http://projektpolska.pl/english/about-us/}{projekt:polska}) --- data consultancy, data cleaning and merging, geocoding, item response theory (Python: SciPy, Pandas; R: mirt).
+        \item Custom interactive charts for \href{http://www.data4cure.com/}{Data4Cure} (D3.js).
+        \item Evaluation of investment potential for \href{https://www.compass.co/}{Startup Compass} (Python: scikit-learn, Pandas; R: party).
+    \end{list2}
+
+    {\bf  Startup Compass Inc.}, San Francisco, CA, USA\\
+    Data Science Intern \hfill {\bf Jul -- Oct 2013}\\
+    \begin{list2}
+        \vspace*{-4mm}
+        \item Designing distance function for software companies, based on a multidimensional dataset.
+        \item Data processing (Python: SciPy, Pandas; MongoDB), data exploration and visualization (Gephi, D3.js).
+    \end{list2}
+
+
+\newpage
+
+    %____________________________________________________________________________________
+    % Research Experience
+    \section{\mysidestyle Research\\Experience}
+
+    {\bf DELab, University of Warsaw}, Warsaw, Poland \hfill {\bf Apr 2015 --}\\
+    Principal Investigator\\
+    \begin{list2}
+        \vspace*{-4mm}
+        \item Analysis and visualization of the Polish nationwide high school exam results, \url{https://github.com/stared/delab-matury} 
+        \item An intensive 5-day introduction to data analysis in Python, for social science students and academic workers, \url{https://github.com/DELabUW/szkola-letnia-2015}
+    \end{list2}
+
+    {\bf CeNT, University of Warsaw}, Warsaw, Poland \hfill {\bf Mar 2015 --}\\
+    Data Visualization Specialist, Dariusz Plewczynski Group\\
+    \begin{list2}
+        \vspace*{-4mm}
+        \item Interactive visualization of the similarity between influenza strains
+    \end{list2}
+
+    {\bf  ISI Foundation}, Turin, Italy\\
+    Jacob Biamonte Gorup \hfill {\bf May -- Jun 2013}\\
+    \begin{list2}
+        \vspace*{-4mm}
+        \item Quantum complex networks: quantum walks, community detection, weak time-symmetry.
+    \end{list2}
+
+    {\bf  The Institute for Theoretical Physics (IFT) UAM-CSIC}, Cantoblanco (Madrid), Spain\\
+    German Sierra and Javier Rodriguez-Laguna  \hfill {\bf Mar 2013, Jul 2014}\\
+    \begin{list2}
+        \vspace*{-4mm}
+        \item Complex systems and classical information for quantum states.
+        \item Local-unitary equivalence for permutation-symmetric states.
+    \end{list2}
+
+	{\bf  Interdisciplinary Centre for Mathematical and Computational Modelling, University of Warsaw}, Warsaw, Poland\\
+	Dariusz Plewczyński Group, mathematical psychology \hfill collaboration: {\bf Nov 2010 -- }\\
+    \begin{list2}
+        \vspace*{-4mm}
+        \item Cognitive computing: human information sharing models, models of human perception.
+    \end{list2}
+
+	{\bf Institute of Theoretical Physics, University of Warsaw}, Warsaw, Poland\\
+	Konrad Banaszek Group, quantum optics (theoretical physics) ,
+	TEAM Programme operated by the Foundation for Polish Science \hfill {\bf Jan -- Sep 2010}\\
+    \begin{list2}
+        \vspace*{-4mm}
+        \item Quantum-enhanced protocols in realistic environments: Generation schemes for robust entangled states.
+    \end{list2}
+
+    {\bf ICFO - The Institute of Photonic Science},\\ Castelldefels (Barcelona), Spain\\
+    Maciej Lewenstein Group, quantum optics (theoretical physics) \hfill {\bf Oct 2009}\\
+    \begin{list2}
+        \vspace*{-4mm}
+        \item Ultra-cold atomic gases in non-abelian gauge fields.
+    \end{list2}
+
+    {\bf Faculty of Physics, Nicolaus Copernicus University}, Toruń, Poland\\
+    Konrad Banaszek Group, quantum optics (theoretical physics) \hfill {\bf 2007 -- 2009}\\
+    \begin{list2}
+        \vspace*{-4mm}
+        \item Analysis of spontaneous parametric down-conversion, estimation of the quantum noise.
+        \item Averaging procedures for generating decoherence-free states.
+    \end{list2}
+
+    {\bf Faculty of Physics, University of Warsaw}, Warsaw, Poland\\
+    Czesław Radzewicz Group, applied optics (experimental physics) \hfill {\bf 2006 -- 2007}\\
+    \begin{list2}
+        \vspace*{-4mm}
+        \item Wavefront sensor with Fresnel zone plates for use in an undergraduate laboratory.
+    \end{list2}
+
+    {\bf Francis Bitter Magnet Laboratory, Massachusetts Institute of Technology},\\
+    Jagadeesh Moodera Group, spintronics (experimental physics) \hfill Cambridge (MA), USA\\
+    during the Research Science Institute 2005 scholarship \hfill {\bf Jul –- Aug 2005}\\
+    \begin{list2}
+        \vspace*{-4mm}
+        \item Experimental work on organic tunneling barriers.
+    \end{list2}
+
+
+\newpage
+
+    %____________________________________________________________________________________
+    % Reference
+%    \section{\mysidestyle References}
+
+%The two most recent collaborators:\vspace{3mm}\\
+% \begin{tabular}{@{} l @{\hspace{4mm}} l @{\hspace{8mm}} l@{\hspace{4mm}} l }
+%prof. & Czesław Radzewicz       & czeslaw.radzewicz@fuw.edu.pl  & (academic advisor, collaborator)   \\
+%dr    & Wojciech Wasilewski     & wojciech.wasilewski@fuw.edu.pl & (collaborator)  \\
+
+%    \end{tabular}
+    
+%\vspace{3mm}
+
+
+    %____________________________________________________________________________________
+    % Activities
+    \section{\mysidestyle Projects,\\Activities}
+    Teaching, popularization and organizational work
+        \begin{list2}
+        \item Designing and developing \href{http://quantumgame.io/}{Quantum Game} \hfill {May 2015--}
+        \item Designed and lead an intensive one-week training \href{http://www.delab.uw.edu.pl/szkola-letnia-dane-2015/}{Data Analysis Summer School in Python} for sociologists and psychologists \hfill { Jul~2015} 
+        \item Referee for Physical Review A \hfill { 2014--2015}
+        \item Started an unconference series \href{http://offtopicarium.wikidot.com/en:start}{Offtopicarium} \hfill { Jan 2012--}
+	    \item a moderator of Theoretical Physics - Stack Exchange \hfill Nov 2011--May 2012
+        \item prepared and lead a month-length course {\sl Introduction to quantum cryptography} for 2 talented high-school students for Caixa Catalunya (Jovenes y Ciencia) \hfill Jun 2011, Jul 2012
+        \item co-organizer of the \href{http://warsztatywww.wikidot.com/en}{6th and 7th  Summer Scientific Schools} \hfill 2010-2011%\\
+        \item co-organizer of \href{http://www.flaszki.waw.pl/}{Flaszki} (a series of 5-min talks) \hfill 2010
+%        (non-profit camp for gifted high school students)
+        \item member of the {\sl Neurobiology Students' Scientific Society}, Univ. of Warsaw  \hfill 2008--2011
+        \item voluntary tutor of the \href{http://www.fundusz.org/?lang=gb}{Polish Children's Fund} during 9 scientific workshops \hfill 2006--2011\\
+        (for gifted high school individuals), the last one: \href{http://migdal.wikidot.com/fizyka-stada}{Physics of Herd}
+        % \item 9 talks on students' conferences (physics, mathematics, psychology) \hfill 2006--2010
+        % \item 5 scientific and didactic shows \hfill 2006--2010
+        \item mentor of A. Kubica and W. Pilewski, winners (1st prize) of the \href{http://www.eucys09.fr/}{21st European Union Contest for Young Scientists in Paris}  \hfill 2009
+%            in the {\sl Polish Finals of the European Union Contest for Young Scientists} for its participants (Aleksander Kubica, Wiktor Pilewski) and in 1st in the 21st {\sl EUCYS} in Paris
+        \item head organizer of the 7th Polish Physics Students' Societies Conference \hfill 2007--2009\\
+        (7--10.11.2008, University of Warsaw, 80 participants from 15 universities, 36 talks)
+        \item co-founder and president of the \href{http://skfiz.fuw.edu.pl/en}{Physics Students' Society}, Univ. of Warsaw \hfill 2006--2009
+        \item problem setter of the Polish Physics Olympiad \hfill 2006--2008
+        \end{list2} 
+	
+	Courses and conferences --- participant 
+	        \begin{list2}
+        \item \href{http://bigdive.eu}{BigDive} (a 4-week long hands-on workshop in data science and big data processing, for 20 participants), Turin, Italy \hfill {2012}
+        \item \href{http://www.uibk.ac.at/th-physik/qism2012/}{Quantum Information meets Statistical Mechanics}, Innsbruck, Austria \hfill 2012
+        \item \href{http://www.eccs2012.eu/}{ECCS12}: European Conference on Complex Systems, Brussels, Belgium \hfill 2012
+        \item \href{http://qcmc2012.org/}{QCMC2012}: 11th Intl. Conference on Quantum Communication, Measurement and Computing, Vienna, Austria \hfill 2012
+        \item \href{http://www.fizyka.umk.pl/zfmis/smp44/}{44 Symposium on Mathematical Physics: New Developments in the Theory of Open Quantum Systems}, Toruń, Poland  \hfill 2012
+	    \item \href{http://www.eccs2011.eu/}{ECCS2011}: European Conference of Complex Systems, including events: \href{http://markov.uc3m.es/complexdynamics11/Home.html}{Complex Dynamics of Human Interactions} and \href{http://cssociety.org/PhDVienna2011}{PhD 'Research in Progress' Workshop}, Vienna, Austria  \hfill 2011
+	    \item \href{http://netsci2011.net/}{NetSci 2011}: The International School and Conference on Network Science\hfill 2011
+	    \item \href{http://bss.mafihe.hu/}{Balaton Summer School in Physics}: Self-organization and complex systems, Hungary \hfill 2010
+        \item \href{http://www.icoam.org/}{International Conference on Optical Angular Momentum}, York, UK \hfill 2010
+        \item {Summer Course: Quantum Engineering, Advanced Level}, Warsaw, Poland \hfill 2009
+ %       (31.08-25.09.2009, Faculty of Physics, University of Warsaw)
+        \item \href{http://www.cft.edu.pl/QuantumOpticsVII/}{Quantum Optics VII - Quantum Engineering of Atoms and Photons} Zakopane, Poland \hfill 2009
+        \item {Quantum Optics and Quantum Information}, Toruń, Poland \hfill 2008 
+ %       (22-25.08.2008, Faculty of Physics, Nicolaus Copernicus University, Toruń)  
+ %       \item 7 scientific workshops organized by the \href{http://www.fundusz.org/?lang=gb}{Polish Children's Fund} \hfill 2003--2005
+                \end{list2} 
+       
+     Other
+	        \begin{list2}
+	    \item co-founder of Confrenzy --- a website listing scientific events \hfill 2011--2012
+        % \item Data Science intern at Startup Compass Inc. --- \hfill Jul--Oct 2013
+                \end{list2} 
+
+%jeszcze wWw!
+
+    %courses
+    %students conferences
+    %conferences
+    %didactics?
+
+\vspace{3mm}
+
+   %____________________________________________________________________________________
+    % Awards and Scholarships
+    \section{\mysidestyle Awards,\\Scholarships}
+    \begin{list2}
+        \item Personal grant for Matura Exam Data Analysis from DELab UW \hfill {Apr 2015}
+    	\item ICFO Innovation Fund grant awarded for Confrenzy \hfill Oct 2011
+        \item Scholarship of the Minister of Science and Higher Education\\for exceptional achievements in science \hfill 2007--2010
+        \item 2nd  place in the Didactic Show Competition (Faculty of Physics, University of Warsaw)  \hfill 2008  %6.12.2008 
+        \item Research Science Institute (Massachusetts Institute of Technology, Cambridge, MA, USA) \hfill 2005
+        \item Scholarship of the Polish Children's Fund \hfill 2003--2005
+        \item Scholarship of the Minister of Education, Science and Sport \hfill 2003--2005
+        \item Bronze Medal in the International Physics Olympiad (Pohang, South Korea) \hfill 2004
+        \item 2nd  place in the 53rd Polish Physics Olympiad \hfill 2004
+        \item 7th  place in the 52nd Polish Physics Olympiad \hfill 2003
+    \end{list2}
+
+\vspace{3mm}
+
+    %____________________________________________________________________________________
+    % Skills
+    \section{\mysidestyle Technical skills}
+    \begin{list2}
+        \item Languages: Polish (native), English (fluent)
+        \item Programming languages and tools: Python, JavaScript, R, Mathematica, LaTeX, Git
+        \item Systems (user): Mac OS X, Linux, Windows
+    \end{list2}
+
+%\vspace{3mm}
+\newpage
+
+    %____________________________________________________________________________________
+    % Awards and Scholarships
+    \section{\mysidestyle Publications}
+    Papers
+    \begin{list2}
+        \item P. Migdał, J. Rodríguez-Laguna, M. Oszmaniec, M. Lewenstein,
+        \href{http://arxiv.org/abs/1403.3069}{Multiphoton states related via linear optics}, Phys. Rev. A 89, 062329 (2014), arXiv:1403.3069,
+        featured in the Editor's Suggestions of Physical Review A.
+        \item M. Denkiewicz, J. Rączaszek-Leonardi, P. Migdał, D. Plewczynski,
+        \href{https://mindmodeling.org/cogsci2013/papers/0398/}{Information-Sharing in Three Interacting Minds Solving a Simple Perceptual Task},
+        35th Annual Cognitive Science Conference, 2172.
+        \item M. Faccin, P. Migdał, T. Johnson, J. Biamonte, V. Bergholm,
+        \href{http://arxiv.org/abs/1310.6638}{Community Detection in Quantum Complex Networks}, Phys. Rev. X 4, 041012 (2014), arXiv:1310.6638.
+        \item M. Faccin, T. Johnson, J. Biamonte, S. Kais, P. Migdał,
+        \href{http://arxiv.org/abs/1305.6078}{Degree Distribution in Quantum Walks on Complex Networks},
+        Phys. Rev. X 3, 041007 (2013),
+        arXiv:1305.6078,
+        featured on \href{http://johncarlosbaez.wordpress.com/2013/08/05/quantum-network-theory-part-1/}{Azimuth blog}
+        \item P. Migdał, J. Rodriguez-Laguna, M. Lewenstein,
+        \href{http://arxiv.org/abs/1305.1506}{Entanglement classes of permutation-symmetric qudit states: symmetric operations suffice},
+        Phys. Rev. A 88, 012335 (2013), arXiv:1305.1506
+        \item J. Rodriguez-Laguna, P. Migdał, M. Ibanez Berganza, M. Lewenstein, G. Sierra, \href{http://dx.doi.org/10.1088/1367-2630/14/5/053028}{Qubism: self-similar visualization of many-body wavefunctions}, New J. Phys. 14 053028 (2012), arXiv:1112.3560,
+        in \href{http://iopscience.iop.org/1367-2630/page/Highlights%20of%202012}{the NJP Highlights of 2012}
+		\item P. Migdał, M. Denkiewicz, J. Rączaszek-Leonardi, D. Plewczynski, \href{http://arxiv.org/abs/1109.2044}{Information-sharing and aggregation models for interacting minds},
+        Journal of Mathematical Psychology 56, 417-426 (2012),
+        arXiv:1109.2044,
+        \href{http://egtheory.wordpress.com/2014/01/30/two-heads-are-better-than-one-how-about-more/}{blog post}
+        \item P. Migdał, K. Banaszek, \href{http://arxiv.org/abs/1107.3786}{Immunity of information encoded in decoherence-free subspaces to particle loss}, Phys. Rev. A 84, 052318 (2011), arXiv:1107.3786
+    	\item P. Migdał, \href{http://arxiv.org/abs/1009.1031}{A mathematical model of the Mafia game}, arXiv:1009.1031
+        \item P. Migdał, W. Wasilewski, \href{http://dx.doi.org/10.1007/s00340-010-3915-z}{Noise reduction in 3D noncollinear parametric amplifier}, Appl. Phys. B 99, 657-671 (2010), arXiv:0908.2207
+        \item K. Banaszek, R. Demkowicz-Dobrzański, M. Karpinski, P. Migdał, C. Radzewicz, \href{http://arxiv.org/abs/0908.3548}{Quantum and semiclassical polarization correlations}, Opt. Comm. 283, 713-718 (2010), arXiv:0908.3548
+        \item P. Migdał, P. Fita, C. Radzewicz, Ł. Mazurek, \href{http://ultrafast.fuw.edu.pl/publications/ajp_2008.pdf}{Wavefront sensor with Fresnel zone plates for use in an undergraduate laboratory}, Am. J. Phys. 76, 229 (2008)
+        \item T. S. Santos, J. S. Lee, P. Migdal, I. C. Lekshmi, B. Satpati, J. S. Moodera, \href{http://dx.doi.org/10.1103/PhysRevLett.98.016601}{Room-Temperature Tunnel Magnetoresistance and Spin-Polarized Tunneling through an Organic Semiconductor Barrier}, Phys. Rev. Lett. 98, 016601 (2007)
+    \end{list2}
+
+\newpage
+
+
+    Departamental talks (selected)
+    \begin{list2}
+        \item Quantum complex networks: random walks and community-detection\\
+        (BarabasiLab and CCNR, Northeastern University, Boston) \hfill Oct 2013
+        \item Qubism: self-similar visualization of many-body wavefunctions\\
+        (IQIM Seminar, Caltech, Pasadena) \hfill Oct 2013
+        \item Two heads are better than one... and what about n heads?\\
+        (Tamas Vicsek Group, ELTE, Budapest) \hfill Jun 2011
+    \end{list2}
+
+    Meetup talks (selected)
+    \begin{list2}
+        \item \href{http://www.meetup.com/Bay-Area-d3-User-Group/events/133292932/}{Graph Visualization in D3.js}, Bay Area d3 User Group, San Francisco, \hfill Sept 2013
+        \item \href{http://nbviewer.ipython.org/gist/stared/4738143}{Machine learning in Python}, Barcelona Python Meetup \hfill Feb 2013
+    \end{list2}
+
+    Conference talks --- presenting author
+     \begin{list2}
+        \item P. Migdał, {\sl Limits of quantum interference}, \href{http://www.polishperspectives.org/}{Science. Polish Perspectives} (24-25.10.2014, Oxford, UK)
+        \item P. Migdał, M. Denkiewicz, J. Rączaszek-Leonardi, D. Plewczynski, {\sl Two and more heads deciding: models of information-sharing and aggregation for two-choice discriminative tasks}, \href{http://markov.uc3m.es/complexdynamics11/Home.html}{Complex Dynamics of Human Interactions} (a \href{http://www.eccs2011.eu/}{ECCS2011} satellite) (12-16.09.2011, Vienna, Austria)
+    \end{list2}   
+
+    Conference posters --- presenting author
+    \begin{list2}
+        \item J. Rodriguez-Laguna, P. Migdał, M. Ibanez Berganza, M. Lewenstein, G. Sierra, \href{http://dx.doi.org/10.6084/m9.figshare.97233}{Self-similar visualization and sequence analysis of many-body wavefunctions} (2012)
+        \item P. Migdał, K. Banaszek, \href{http://dx.doi.org/10.6084/m9.figshare.97235}{Immunity of information encoded in singlet states against one particle loss} (2012)
+        \item A. Kubica, P. Migdał, \href{http://dx.doi.org/10.6084/m9.figshare.97236}{The spatial shape of the Spiral Zone Plate foci} (2010)
+        \item P. Migdał, W. Wasilewski, \href{http://dx.doi.org/10.6084/m9.figshare.97237}{Optimization of a 3D noncollinear parametric amplifier} (2009)
+    \end{list2}
+    
+    Popular science and education-related articles (selected)
+    \begin{list2}
+        \item P. Migdał, \href{http://crastina.se/theres-no-projects-like-side-projects/}{There are no projects like side projects}, The Crastina Column (2015)
+        \item P. Migdał, \href{http://egtheory.wordpress.com/2014/01/30/two-heads-are-better-than-one-how-about-more/}{Two heads are better than one. How about more?}, The EGG blog (2014)
+        \item M. Kotowski, M. Kotowski, P. Marczewski, P. Migdał, \href{http://warsztatywww.wikidot.com/en:indie-camp-for-hs-geeks}{An independent camp for high school geeks}, Summer Scientific School (2012)
+        \item M. Kotowski, P. Migdał, \href{http://offtopicarium.wikidot.com/v1:open-science-2-0}{Open Science and Science 2.0}, 1st Offtopicarium (2012)
+        \item P. Migdał, S. Krawczyk, \href{http://migdal.wikidot.com/local--files/nerdowska-duma/Migdal_Krawczyk__Zespol_Aspergera_preprint_after_vkkk.pdf}{Zespół Aspergera, nauki ścisłe i kultura nerdów} (Asperger Syndrome, Hard Science and Nerd Culture), V Krakowska Konferencja Kognitywistyczna (2011), a popular science article
+		% \item P. Migdał, \href{http://www.epigen.arabidopsis.pl/swn09/calosc.pdf}{Szczypta magii w każdym promyku – o polaryzacji światła} (A bit of magic in every ray - on the polarization of light), III Sylwestrowe Warsztaty Naukowe, 65-67 (2010), a popular science article
+		\item M. Kotowski, M. Kotowski, P. Migdał, K. Sołtys, \href{http://warsztatywww.wikidot.com/drogowskaz-pasjonata}{Drogowskaz Pasjonata, czyli jak rozwijać się w szkole i w trakcie studiów} (Guidelines for the Curious - how to develop oneself during high school and university years), (2010), a collection of advice
+		\item P. Migdał, \href{http://www.mimuw.edu.pl/delta/artykuly/delta2010-07/2010-07-6.pdf}{Mafia, zdradziecka parzystość oraz pi} (Mafia, treacherous parity and pi), Delta - miesięcznik popularnonaukowy, 14-15, 07/2010 (2010), a short popular science article
+		\item P. Migdał, \href{http://migdal.wikidot.com/zapalency-i-wypalency}{Zapaleńcy i Wypaleńcy, czyli rzecz o utracie pasji w trakcie studiów} (Flames of passion… and of burnout, or: about the loss of motivation during studies), (2010), an essay
+		\item eds: M. Zientkiewicz, P. Migdał, M. Nowaczyk, M. Pomorski, B. Szczygieł, \href{http://skfiz.fuw.edu.pl/vii-osknf:proceedings}{7th Polish Physics Students' Societies Conference - proceedings}, ISBN: 978-83-61026-05-1, (2009), a book (132 pages, 10 reviewed papers)
+    \end{list2}
+
+
+
+% \vspace{3mm}
+%     %____________________________________________________________________________________
+%     % Hobbies
+%     \section{\mysidestyle Hobbies}
+%     photography, hiking, cognitive science
+
+%________________________________________________________________________________________
+\end{resume}
+\end{document}
+
+%________________________________________________________________________________________
+% EOF
